@@ -50,7 +50,7 @@
   font-size: 18px;
   font-weight: normal;
   margin: 0;
-  padding: 0;
+  z-index: 3;
 }
 
 .header__link {
@@ -103,7 +103,6 @@
   font-weight: normal;
   color: #2f80ed;
   margin: 0;
-  padding: 0;
 }
 
 .two-columns__main-text {
@@ -116,23 +115,20 @@
 
 .two-columns__paragraph {
   margin: 0 0 30px 0;
-  padding: 0;
 }
 
 .two-columns__paragraph:last-of-type {
   margin-bottom: 0;
 }
 
-.two-columns__span-accept {
-  line-height: 34px;
-  font-size: 24px;
+.two-columns__span-accent {
   font-weight: bold;
 }
 
 /* Стили для digits */
 
 .digits {
-  margin: 100px auto 0;
+  margin: 100px auto 100px;
 }
 
 /* Стили для table */
@@ -144,12 +140,12 @@
   font-size: 60px;
   font-weight: bold;
   margin: 0 auto;
-  padding: 0;
 }
 
 .section-title_theme_dark {
-  color: white;
-  margin-top: 90px;
+  color: #fff;
+  position: relative;
+  z-index: 3;
 }
 
 .section-subtitle {
@@ -170,12 +166,11 @@
   justify-content: space-between;
   flex-wrap: wrap;
   width: 1100px;
-  margin: 0 auto 100px;
+  margin: 0 auto 0;
   padding: 0;
 }
 
 .table_theme_dark {
-  margin-bottom: 90px;
 }
 
 .table__cell {
@@ -197,7 +192,6 @@
   font-size: 24px;
   font-weight: bold;
   margin: 0;
-  padding: 0;
 }
 
 .table__heading_theme_dark {
@@ -209,7 +203,6 @@
   font-size: 18px;
   font-weight: normal;
   margin: 20px 0 0 0;
-  padding: 0;
 }
 
 .table__text_theme_dark {
@@ -219,7 +212,7 @@
 /* Стили для feynman */
 
 .feynman {
-  height: 890px;
+  min-height: 890px;
   background-color: #f2f2f2;
   background-image: url('../images/feynman.png');
   background-position: bottom left;
@@ -227,7 +220,8 @@
   background-repeat: no-repeat;
   position: relative;
   margin: 0;
-  padding: 0;
+  padding: 100px 0 0;
+  box-sizing: border-box;
 }
 
 .feynman__title {
@@ -237,7 +231,6 @@
   font-size: 120px;
   font-weight: bold;
   margin: 0 auto 70px;
-  padding: 100px 0 0;
 }
 
 .feynman__subtitle {
@@ -247,15 +240,12 @@
   font-size: 36px;
   font-weight: normal;
   margin: 0 auto;
-  padding: 0;
 }
 
 .feynman__link{
   position: absolute;
   top: 50%;
   right: 48px;
-  margin: 0;
-  padding: 0;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -266,13 +256,15 @@
 /* Стили для kaufman */
 
 .kaufman {
-  padding: 0;
   background-color: #1f1f1f;
   overflow: hidden;
   position: relative;
+  padding: 90px 0 90px 0;
 }
 
 .kaufman__triangle {
+  background-image: url('../images/kaufman-triangle.svg');
+  background-size: 877px 877px;
   width: 877px;
   height: 877px;
   position: absolute;
@@ -290,6 +282,7 @@
   background-color: #1f1f1f;
   color: white;
   display: flex;
+  box-sizing: border-box;
 }
 
 .footer__author {
@@ -338,7 +331,6 @@
 .footer__column-link {
   color: white;
   text-decoration: none;
-  margin: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
